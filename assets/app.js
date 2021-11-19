@@ -98,8 +98,8 @@ window.addEventListener('load', () => {
 });
 //card compnent
 let deals = {
-    'Top Deal': '../assets/icons/TOP DEAL.svg',
-    "Premimum" : '../assets/icons/PREMIUM.svg'
+    'Top Deal': 'assets/icons/TOP DEAL.svg',
+    "Premimum" : 'assets/icons/PREMIUM.svg'
 }
 let card_containers = document.querySelectorAll('section .swaper .cards-container');
 // let card = ({img = 'assets/images/lucas-sankey-378674.jpg', deal = {'Top Deal': false, 'Premimum': false} , fav, spec = 'Montage de video de promotion', name = 'Simon R.', rate = 4, price = 200}) => {
@@ -148,7 +148,7 @@ let card_containers = document.querySelectorAll('section .swaper .cards-containe
 
 //append cards using JSON and AJAX :
     //github api
-    function card({id, avatar_url = '../assets/images/lucas-sankey-378674.jpg', deal = {'Top Deal': false, 'Premimum': false} , fav, spec = 'Montage de video de promotion', login = 'Simon R.', rate = 4, price = 200})  {
+    function card({id, avatar_url = 'assets/images/lucas-sankey-378674.jpg', deal = {'Top Deal': false, 'Premimum': false} , fav, spec = 'Montage de video de promotion', login = 'Simon R.', rate = 4, price = 200})  {
         //card
         let card = document.createElement('div');
         card.classList.add('card');
@@ -175,11 +175,11 @@ let card_containers = document.querySelectorAll('section .swaper .cards-containe
             </div>
             <p class="spec">${spec}</p>
             <div class="name_part">
-                <img src="../assets/icons/PROFIL.svg" class="user-logo" alt=""><p class="name">${login}</p>
+                <img src="assets/icons/PROFIL.svg" class="user-logo" alt=""><p class="name">${login}</p>
             </div>
             <div class="rate_price">
                 <div class="rate">
-                    ${'<img src="../assets/icons/NOTE1.svg" class="circ" alt="">\n'.repeat(rate) + '<img src="../assets/icons/NOTE2.svg" class="circ" alt="">'.repeat(5 - rate)}
+                    ${'<img src="assets/icons/NOTE1.svg" class="circ" alt="">\n'.repeat(rate) + '<img src="assets/icons/NOTE2.svg" class="circ" alt="">'.repeat(5 - rate)}
                 </div>
                 <p class="price">a partir de <span>${price} &euro;</span></p>
             </div>`;
@@ -190,11 +190,11 @@ let card_containers = document.querySelectorAll('section .swaper .cards-containe
             </div>
             <p class="spec">${spec}</p>
             <div class="name_part">
-                <img src="../assets/icons/PROFIL.svg" class="user-logo" alt=""><p class="name">${login}</p>
+                <img src="assets/icons/PROFIL.svg" class="user-logo" alt=""><p class="name">${login}</p>
             </div>
             <div class="rate_price">
                 <div class="rate">
-                    ${'<img src="../assets/icons/NOTE1.svg" class="circ" alt="">\n'.repeat(rate) + '<img src="../assets/icons/NOTE2.svg" class="circ" alt="">'.repeat(5 - rate)}
+                    ${'<img src="assets/icons/NOTE1.svg" class="circ" alt="">\n'.repeat(rate) + '<img src="assets/icons/NOTE2.svg" class="circ" alt="">'.repeat(5 - rate)}
                 </div>
                 <p class="price">a partir de <span>${price} &euro;</span></p>
             </div>`;
@@ -206,7 +206,7 @@ let card_containers = document.querySelectorAll('section .swaper .cards-containe
 (function apendCards(){
     let req = new XMLHttpRequest();
     // json package
-    // req.open('GET', '../package.json');
+    // req.open('GET', 'package.json');
     // req.send();
     // req.onload = () => {
     //     let data_obj = JSON.parse(req.responseText);
