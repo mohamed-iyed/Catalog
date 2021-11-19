@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: 'comfbold';
+    src: url('comfortaa-bold-webfont.woff2') format('woff2'),
+         url('comfortaa-bold-webfont.woff') format('woff'),
+         url('comfortaa-bold-webfont.svg#comfortaabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'comflight';
+    src: url('comfortaa-light-webfont.woff2') format('woff2'),
+         url('comfortaa-light-webfont.woff') format('woff'),
+         url('comfortaa-light-webfont.svg#comfortaalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'comfreg';
+    src: url('comfortaa-regular-webfont.woff2') format('woff2'),
+         url('comfortaa-regular-webfont.woff') format('woff'),
+         url('comfortaa-regular-webfont.svg#comfortaaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
